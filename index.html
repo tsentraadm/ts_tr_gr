@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реквізити для оплати Центра Трейд</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .logo {
+      margin-bottom: 10px;
+      max-width: 200px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: left;
+      width: 100%;
+      max-width: 400px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .iban-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    input {
+      flex: 1;
+      background-color: #f0f0f0;
+      border: 0.5px solid #ccc;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 4px 0 0 4px;
+      cursor: default;
+    }
+    button {
+      padding: 10px 14px;
+      font-size: 14px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    .copied {
+      background-color: green !important;
+    }
+    .accordion {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 10px;
+    }
+    .accordion-item {
+      background: #f0f0f0;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .accordion-header {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 15px;
+      font-weight: bold;
+      background: #f0f0f0;
+    }
+    .accordion-body {
+      display: none;
+      padding: 15px;
+      max-width: 60%;
+
+    }
+    .accordion-item.active .accordion-body {
+      display: block;
+    }
+    .accordion-body img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px 0;
+    }
+    .instruction-label {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .info-label {
+      align:center;
+      padding: 20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<img src="IMG_4668.PNG" alt="Логотип" class="logo">
+<div class="info-label">Реквізити для оплати <br>Центра трейд</div>
+<div class="container">
+  <label>IBAN</label>
+  <div class="iban-container">
+    <input type="text" class="ibanField" value="UA193052990000026002041017893" readonly>
+    <button class="copyBtn">КОПІЮВАТИ</button>
+  </div>
+  <label>Одержувач</label>
+  <div class="iban-container">
+    <input type="text" class="ibanField" value="ТОВ «ЦЕНТРА ТРЕЙД»" readonly>
+    <button class="copyBtn">КОПІЮВАТИ</button>
+  </div>
+  <label>ЄДРПОУ</label>
+  <div class="iban-container">
+    <input type="text" class="ibanField" value="43614688" readonly>
+    <button class="copyBtn">КОПІЮВАТИ</button>
+  </div>
+</div>
+<div class="instruction-label">Інструкція по оплаті на IBAN:</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-header">Приватбанк</div>
+    <div class="accordion-body">
+      <p>Увійдіть в меню послуг і виберіть пункт «Платежі» або «Перекази».</p>
+      <img src="photo/privat_new_1.jpg" class="img-responsive">
+      <img src="photo/privat_new_2.jpg" class="img-responsive">
+      <p>Виберіть «За реквізитами», введіть номер рахунку та натисніть «Продовжити».</p>
+      <img src="photo/privat_new_4.jpg" class="img-responsive">
+      <p>Перевірте дані, введіть суму з SMS і підтвердіть платіж.</p>
+      <img src="photo/privat_new_5.jpg" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-header">Монобанк</div>
+    <div class="accordion-body">
+      <p>Увійдіть в меню послуг і виберіть пункт «Платежі» або «Перекази».</p>
+      <img src="photo/privat_new_1.jpg" class="img-responsive">
+      <img src="photo/privat_new_2.jpg" class="img-responsive">
+      <p>Виберіть «За реквізитами», введіть номер рахунку та натисніть «Продовжити».</p>
+      <img src="photo/privat_new_4.jpg" class="img-responsive">
+      <p>Перевірте дані, введіть суму з SMS і підтвердіть платіж.</p>
+      <img src="photo/privat_new_5.jpg" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-header">Інші банки</div>
+    <div class="accordion-body">
+      1.Виберіть «Платежі».<br>
+      2.Натисніть «Платежі за реквізитами».<br>
+      3.Введіть номер рахунку (IBAN дивіться на цій сторінці зверху) і створіть платіж.<br>
+      4.Введіть суму з смс, перевірте дані і підтвердіть платіж.<br>
+      5.Після зарахування оплати на наш рахунок ви отримаєте смс-підтвердження, а ваше замовлення буде передано на комплектацію і відправку.<br>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll(".copyBtn").forEach(button => {
+    button.addEventListener("click", function() {
+      let ibanField = this.previousElementSibling;
+      navigator.clipboard.writeText(ibanField.value).then(() => {
+        this.textContent = "СКОПІЙОВАНО";
+        this.classList.add("copied");
+        setTimeout(() => {
+          this.textContent = "КОПІЮВАТИ";
+          this.classList.remove("copied");
+        }, 2000);
+      }).catch(err => {
+        alert("Помилка копіювання: " + err);
+      });
+    });
+  });
+  document.querySelectorAll(".accordion-header").forEach(header => {
+    header.addEventListener("click", function() {
+      this.parentElement.classList.toggle("active");
+    });
+  });
+</script>
+</body>
+</html>
